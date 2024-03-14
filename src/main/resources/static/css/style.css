@@ -1,0 +1,278 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Mitr', sans-serif;
+}
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(''); /* Replace with your image URL */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1; /* Set a lower z-index to place it behind the content */
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #c0c0c0; /* ribbon color */
+  color: #fff; /* text color */
+  padding: 8px 16px; /* padding around the text */
+  transform: translateY(-50%) rotate(45deg); /* rotate and offset */
+  z-index: 1; /* Set a lower z-index to place it behind the first background image */
+}
+.companyIcon{
+	  background-image: url('../image/TopNotchProject.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+}
+
+nav{
+	border-bottom: 2px solid #FDB750;
+}
+
+h5{
+  text-indent: 20px;
+}
+
+p {
+  text-indent: 20px;
+  
+}
+
+.container {
+  padding-top: 70px; /* Adjust the value to create enough space for the fixed-top element */
+}
+
+#carousel-section {
+    /* Set appropriate height and background image */
+    background-image: url('carousel-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  	aspect-ratio: 16/9;
+}
+.carousel-caption h3 {
+  color: #000; /* Change to your desired text color */
+  font-weight: bold;
+}
+
+.carousel-image {
+    height: 700px; /* Adjust the height value to your desired value */
+    object-fit: cover; /* Optional: To maintain aspect ratio and cover the entire image within the fixed height */
+}
+.carousel-item img {
+    object-fit: contain;
+    width: 100%; /* Optional: To ensure the image fills the entire container width */
+    height: 100%; /* Optional: To ensure the image fills the entire container height */
+}
+
+.carousel-button {
+    /* Custom styles for the centered button */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+.header-button {
+      padding: 10px 20px;
+      background-color: rgb(255, 128, 64); /* Replace with desired button color */
+      color: #fff; /* Replace with desired button text color */
+      font-size: 18px; /* Adjust font size as needed */
+      font-weight: bold;
+      border: none;
+      border-radius: 5% ;
+      cursor: pointer;
+    }
+.carouselBreak{
+	border-bottom: 2px solid #FDB750;
+}
+    
+.header-button:hover {
+	background-color: rgb(128, 128, 128); 
+}
+    
+.stars input[type="radio"] {
+	display: none; 
+}
+     
+.stars label {
+    display: inline-block;
+    font-size: 30px; 
+    color: #ccc; 
+    cursor: pointer;
+}
+
+.stars input[type="radio"]:checked + label,
+.stars input[type="radio"]:checked + label ~ label {
+    color: #ffcc00;
+}
+
+
+
+.services{
+	border-bottom: 2px solid #FDB750;
+}
+.service-card {
+    /* Additional styles for the card */
+    transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+    margin:10px;
+
+}
+
+/*.service-card::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+/*}
+
+/* Style the scrollbar track */
+/*.service-card::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the background color to transparent */
+/*}
+
+/* Style the scrollbar thumb */
+/*.service-card::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Set the background color of the thumb */
+/*  border-radius: 4px; /* Add border-radius for a rounded thumb */
+/*}*/
+
+.service-card:hover {
+    /* Styles for card on hover */
+    transform: scale(1.1); /* Scale up the card on hover */
+    /* Additional styles for card on hover */
+}
+
+.service-column {
+    /* Common styles for card header */
+    height: 200px; /* Set the height of the card header */
+}
+
+.service-1 {
+    /* Styles for service card 1 */
+    background-image: url('../image/TopNotchBath.jpg'); /* Specify background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 1 */
+}
+
+.service-2 {
+    /* Styles for service card 2 */
+    background-image: url('../image/TopNotchWaxFinished.jpg'); /* Specify background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 2 */
+}
+
+.service-3 {
+    /* Styles for service card 3 */
+    background-image: url('../image/TopNotchWax.jpg'); /* Specify background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Additional styles for service card 3 */
+}
+
+.service-4 {
+    /* Styles for service card 1 */
+    background-image: url('../image/TopNotchEngine.jpg'); /* Specify background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 1 */
+}
+
+.service-5 {
+    /* Styles for service card 2 */
+    background-image: url('../image/TopNotchWheel.jpg'); /* Specify background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 2 */
+}
+
+.service-6 {
+    /* Styles for service card 3 */
+    background-image: url('../image/TopNotchHeadlights.jpg'); /* Specify background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 3 */
+}
+
+.service-7 {
+    /* Styles for service card 1 */
+    background-image: url('../image/TopNotchInterior.jpg'); /* Specify background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 1 */
+}
+
+.service-8 {
+    /* Styles for service card 2 */
+    background-image: url('../image/TopNotchHeadliner.jpg'); /* Specify background image */
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 2 */
+}
+
+.service-9 {
+    /* Styles for service card 3 */
+    background-image: url('../image/TopNotchTrim.jpg'); /* Specify background image */
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for service card 3 */
+}
+
+
+.aboutImg {
+	border-radius: 30%;
+	border-color: black;
+	max-width: 100%; /* Add this property */
+}
+
+
+.reviewScroll{
+	max-height: 600px;
+	overflow-y: scroll;
+}
+
+.reviewScroll::-webkit-scrollbar{
+	width: 8px;
+}
+
+.reviewScroll::-webkit-scrollbar{
+	background-color: transparent;
+}
+
+.reviewScroll::-webkit-scrollbar{
+	background-color: rgba(0, 0, 0, 0.2); /* Set the background color of the thumb */
+  border-radius: 4px;
+}
+
+
+
